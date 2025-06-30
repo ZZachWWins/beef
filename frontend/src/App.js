@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <header className="header">
-          <h1 className="title">BEEF TOKEN</h1>
+          <h1 className="title">$BEEF TOKEN</h1>
           <p className="subtitle">The Conflict-Fueled Meme Token</p>
           <div className="social-links">
             <NavLink to="/story" className="nav-btn">Story</NavLink>
@@ -39,6 +39,17 @@ function App() {
                 <p className="milestone-text font-bold text-[#f5e050]">
                   Got BEEF? You’re in the right place.
                 </p>
+              </div>
+
+              <div className="youtube-iframe-container">
+                <iframe
+                  className="youtube-iframe"
+                  src="https://www.youtube.com/embed/wI_fmeX3wSU"
+                  title="BEEF TOKEN Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
 
               <h3 className="journey-subtitle">Roadmap: The Path Ahead</h3>
