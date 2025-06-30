@@ -1,47 +1,8 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import './App.css';
 
 function App() {
-  const [user, setUser] = useState(null);
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [signupUsername, setSignupUsername] = useState('');
-  const [signupPassword, setSignupPassword] = useState('');
   const [showFeud, setShowFeud] = useState(false);
-
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await axios.post('/.netlify/functions/login', { username, password });
-      setUser(res.data.user);
-      setUsername('');
-      setPassword('');
-    } catch (err) {
-      alert('Login failed—check your credentials!');
-    }
-  };
-
-  const handleSignup = async (e) => {
-    e.preventDefault();
-    try {
-      await axios.post('/.netlify/functions/signup', { username: signupUsername, password: signupPassword });
-      alert('Signup successful! Please log in.');
-      setSignupUsername('');
-      setSignupPassword('');
-    } catch (err) {
-      alert('Signup failed—username might be taken!');
-    }
-  };
-
-  const handleLogout = async () => {
-    try {
-      await axios.get('/.netlify/functions/logout');
-      setUser(null);
-    } catch (err) {
-      alert('Logout failed—try again!');
-    }
-  };
 
   return (
     <div className="app">
@@ -52,49 +13,6 @@ function App() {
           <a href="https://t.me/PumpTheBeef" target="_blank" rel="noopener noreferrer" className="social-btn">Join Telegram</a>
           <a href="https://x.com/PumpTheBeef" target="_blank" rel="noopener noreferrer" className="social-btn">Follow on X</a>
         </div>
-        {user ? (
-          <div className="auth-section">
-            <span>Welcome, {user.username}</span>
-            <button onClick={handleLogout} className="auth-btn">Logout</button>
-          </div>
-        ) : (
-          <div className="auth-section">
-            <form onSubmit={handleLogin} className="login-form">
-              <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="Username"
-                required
-              />
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password"
-                required
-              />
-              <button type="submit" className="auth-btn">Login</button>
-            </form>
-            <form onSubmit={handleSignup} className="signup-form">
-              <input
-                type="text"
-                value={signupUsername}
-                onChange={(e) => setSignupUsername(e.target.value)}
-                placeholder="Choose Username"
-                required
-              />
-              <input
-                type="password"
-                value={signupPassword}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Choose Password"
-                required
-              />
-              <button type="submit" className="auth-btn">Signup</button>
-            </form>
-          </div>
-        )}
       </header>
 
       <section className="journey-section">
