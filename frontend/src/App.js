@@ -140,7 +140,7 @@ function App() {
         </div>
         <img 
           src="https://res.cloudinary.com/dgjqe0pu2/image/upload/w_100,h_100,q_auto/1000019251_lpaa2x" 
-          alt="BEEF TOKEN Footer Image" 
+          alt="" 
           className="footer-logo"
         />
       </footer>
