@@ -28,7 +28,7 @@ function App() {
           Buy $BEEF on Raydium
         </a>
         <img
-          src="https://res.cloudinary.com/dgjqe0pu2/image/upload/w_200,h_200,q_auto/1000019254_isoibe"
+          src="https://res.cloudinary.com/dgjqe0pu2/image/upload/w_512,h_512,q_auto/1000019254_isoibe"
           alt=""
           className="contract-image"
         />
