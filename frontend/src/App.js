@@ -19,6 +19,15 @@ function App() {
           </div>
         </header>
 
+        <a
+          href="https://raydium.io/swap/?inputMint=sol&outputMint=CPkbe6eSwido2gHWkp3HM1KQ9sL8BocmqWApeTy6Xmwt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contract-btn"
+        >
+          Trade $BEEF on Raydium
+        </a>
+
         <Routes>
           <Route path="/" element={
             <section className="journey-section">
