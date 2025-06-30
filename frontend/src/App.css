@@ -77,9 +77,9 @@ body::before {
 
 .contract-image {
   display: block;
-  width: calc(100% - 60px); /* Match contract-btn width */
-  max-width: 1340px; /* Match .app max-width minus padding */
-  height: 100px;
+  width: 512px; /* Larger size for visibility */
+  height: 512px;
+  max-width: calc(100% - 60px); /* Match contract-btn width */
   margin: 0 auto 30px;
   object-fit: contain;
 }
@@ -335,8 +335,9 @@ body::before {
   }
 
   .contract-image {
-    width: calc(100% - 30px);
-    height: 80px;
+    width: 384px;
+    height: 384px;
+    max-width: calc(100% - 30px);
   }
 
   .title {
@@ -425,7 +426,8 @@ body::before {
   }
 
   .contract-image {
-    height: 60px;
+    width: 256px;
+    height: 256px;
   }
 
   .cta-btn {
