@@ -79,7 +79,7 @@ body::before {
   margin-bottom: 20px;
 }
 
-.social-btn {
+.social-btn, .nav-btn {
   padding: 10px 20px;
   background: linear-gradient(45deg, #b91c1c, #ca8a04);
   color: #1f1f1f;
@@ -91,9 +91,14 @@ body::before {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.social-btn:hover, .social-btn:active {
+.social-btn:hover, .social-btn:active, .nav-btn:hover, .nav-btn:active {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(202, 138, 4, 0.5);
+}
+
+.nav-btn.active {
+  background: linear-gradient(45deg, #ca8a04, #b91c1c);
+  transform: scale(1.05);
 }
 
 .journey-section {
@@ -282,7 +287,7 @@ body::before {
     gap: 10px;
   }
 
-  .social-btn {
+  .social-btn, .nav-btn {
     padding: 8px 16px;
   }
 
