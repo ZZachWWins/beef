@@ -8,7 +8,7 @@ function App() {
     <div className="app">
       <header className="header">
         <img 
-          src="https://res.cloudinary.com/dgjqe0pu2/image/upload/w_200,h_200,q_auto/1000019256_ldrh3l" 
+          src="https://res.cloudinary.com/dgjqe0pu2/image/upload/w_200,h_200,q_auto/image000000-removebg_zdm0gc" 
           alt="BEEF TOKEN Logo" 
           className="logo"
         />
