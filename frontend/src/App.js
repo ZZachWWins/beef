@@ -13,7 +13,7 @@ function App() {
           <h1 className="title">$BEEF TOKEN</h1>
           <p className="subtitle">The Conflict-Fueled Meme Token</p>
           <div className="social-links">
-            <NavLink to="/story" className="nav-btn">Story</NavLink>
+            <NavLink to="/story" className="nav-btn">The Story</NavLink>
             <a href="https://t.me/PumpTheBeef" target="_blank" rel="noopener noreferrer" className="social-btn">Join Telegram</a>
             <a href="https://x.com/PumpTheBeef" target="_blank" rel="noopener noreferrer" className="social-btn">Follow on X</a>
           </div>
@@ -25,7 +25,7 @@ function App() {
           rel="noopener noreferrer"
           className="contract-btn"
         >
-          Trade $BEEF on Raydium
+          Buy $BEEF on Raydium
         </a>
 
         <Routes>
