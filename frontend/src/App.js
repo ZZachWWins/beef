@@ -7,7 +7,12 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1 className="title">🥩 BEEF TOKEN</h1>
+        <img 
+          src="https://res.cloudinary.com/dgjqe0pu2/image/upload/w_200,h_200,q_auto/1000019256_ldrh3l" 
+          alt="BEEF TOKEN Logo" 
+          className="logo"
+        />
+        <h1 className="title">BEEF TOKEN</h1>
         <p className="subtitle">The Conflict-Fueled Meme Token</p>
         <div className="social-links">
           <a href="https://t.me/PumpTheBeef" target="_blank" rel="noopener noreferrer" className="social-btn">Join Telegram</a>
@@ -127,12 +132,17 @@ function App() {
 
       <footer className="footer">
         <p className="footer-text">
-          $BEEF TOKEN &copy; 2025. Built with ❤️ for the BEEF Brigade. Special thanks to Zach for the epic support in bringing this vision to life!
+          $BEEF TOKEN © 2025. Built with ❤️ for the BEEF Brigade. Special thanks to Zach for the epic support in bringing this vision to life!
         </p>
         <div className="social-links">
           <a href="https://t.me/PumpTheBeef" target="_blank" rel="noopener noreferrer" className="social-btn">Telegram</a>
           <a href="https://x.com/PumpTheBeef" target="_blank" rel="noopener noreferrer" className="social-btn">X</a>
         </div>
+        <img 
+          src="https://res.cloudinary.com/dgjqe0pu2/image/upload/w_100,h_100,q_auto/1000019251_lpaa2x" 
+          alt="BEEF TOKEN Footer Image" 
+          className="footer-logo"
+        />
       </footer>
     </div>
   );
