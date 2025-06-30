@@ -27,6 +27,11 @@ function App() {
         >
           Buy $BEEF on Raydium
         </a>
+        <img
+          src="https://res.cloudinary.com/dgjqe0pu2/image/upload/w_300,h_300,q_auto/1000019254_isoibe"
+          alt="BEEF TOKEN Image"
+          className="contract-image"
+        />
 
         <Routes>
           <Route path="/" element={
